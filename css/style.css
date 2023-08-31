@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Fredoka', sans-serif;  
+}
+
+.title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: #E53170;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.cell{
+    float: left;
+    background-color: black;
+    width: calc((100% / 3) - 40px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.cell:last-child{
+    margin-right: 0;
+}
+
+.cell:nth-child(n + 4){
+    margin-bottom: 0px;
+}
+
+.debug > .cell{
+    background-color: blue;
+    height: 10px;
+}
