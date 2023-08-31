@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 120px;
+}
+
 body{
     font-family: 'Fredoka', sans-serif;  
 }
@@ -13,22 +17,29 @@ body{
     font-weight: bold;
     font-size: 40px;
     color: #E53170;
+    padding: 30px;
+}
+
+.main-paragraph{
+    text-align: center;
+    padding: 20px 0 40px;
 }
 
 .container{
-    max-width: 960px;
+    max-width: 1240px;
     margin: 0 auto;
 }
 
 .cell{
+    color: white;
     float: left;
-    background-color: black;
-    width: calc((100% / 3) - 40px);
+    background-color: #0F0E17;
+    width: calc((100% - 40px) / 3);
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.cell:last-child{
+.cell:nth-child(3n+3){
     margin-right: 0;
 }
 
@@ -36,7 +47,33 @@ body{
     margin-bottom: 0px;
 }
 
-.debug > .cell{
+/* .debug > .cell{
     background-color: blue;
-    height: 10px;
+    /* height: 10px;} */
+
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.team-details > div{
+    line-height: 20px;
+    height: 20px;
+    padding: 13px 0;
+}
+
+.profile{
+    float: left;
+    padding-right: 20px;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.email{
+    color: #378FD0;
 }
