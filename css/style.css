@@ -5,7 +5,7 @@
 }
 
 img{
-    max-width: 120px;
+    max-width: 135px;
 }
 
 body{
@@ -34,9 +34,9 @@ body{
     color: white;
     float: left;
     background-color: #0F0E17;
-    width: calc((100% - 40px) / 3);
-    margin-right: 20px;
-    margin-bottom: 30px;
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 40px;
 }
 
 .cell:nth-child(3n+3){
@@ -61,7 +61,7 @@ body{
 .team-details > div{
     line-height: 20px;
     height: 20px;
-    padding: 13px 0;
+    padding: 15px 0;
 }
 
 .profile{
@@ -76,4 +76,14 @@ body{
 
 .email{
     color: #378FD0;
+}
+
+footer{
+    height: 200px;
+    font-size: larger;
+    background-color: #222222;
+    color: #A2988E;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 30px;
 }
