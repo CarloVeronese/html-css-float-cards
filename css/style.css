@@ -37,9 +37,10 @@ body{
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 40px;
+    box-shadow: 0px 0px 20px 10px black;
 }
 
-.cell:nth-child(3n+3){
+.cell:nth-child(3n){
     margin-right: 0;
 }
 
@@ -58,15 +59,22 @@ body{
     clear: both;
 }
 
-.team-details > div{
+.team-details{
+    float: right;
+    padding-right: 60px;
+}
+
+.team-details > *{
     line-height: 20px;
-    height: 20px;
-    padding: 15px 0;
+    padding: 13px 0;
+}
+
+.team-details > *:last-child{
+   padding-bottom: 0px;
 }
 
 .profile{
     float: left;
-    padding-right: 20px;
 }
 
 .name{
@@ -75,7 +83,13 @@ body{
 }
 
 .email{
+    display: inline-block;
+    padding-top: 15px;
     color: #378FD0;
+}
+
+.role{
+    font-weight: normal;    
 }
 
 footer{
